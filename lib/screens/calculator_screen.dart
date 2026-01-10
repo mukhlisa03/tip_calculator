@@ -30,7 +30,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
               controller: _controller,
               keyboardType: const TextInputType.numberWithOptions(decimal: true),
               decoration: InputDecoration(
-                labelText: "Umumiy hisob (\$)",
+                labelText: "Total Bill (\$)",
                 prefixIcon: const Icon(Icons.receipt_long),
                 border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
                 filled: true,
@@ -41,7 +41,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
             ),
             
             const SizedBox(height: 30),
-            Text("Choychaqa foizi: ${_calc.tipPercentage.toInt()}%", style: const TextStyle(fontWeight: FontWeight.w600)),
+            Text("Tip Percentage: ${_calc.tipPercentage.toInt()}%", style: const TextStyle(fontWeight: FontWeight.w600)),
             
             // Slider
             Slider(
@@ -58,7 +58,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const Text("Bo'lish (Split):", style: TextStyle(fontSize: 16)),
+                const Text("Split Between:", style: TextStyle(fontSize: 16)),
                 Row(
                   children: [
                     _buildCircleButton(Icons.remove, () {

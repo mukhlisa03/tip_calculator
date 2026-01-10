@@ -17,7 +17,7 @@ class ResultCard extends StatelessWidget {
       ),
       child: Column(
         children: [
-          const Text("Kishi boshiga jami:", style: TextStyle(color: Colors.white70, fontSize: 16)),
+          const Text("Total per person:", style: TextStyle(color: Colors.white70, fontSize: 16)),
           const SizedBox(height: 10),
           Text(
             "\$${amount.toStringAsFixed(2)}",
