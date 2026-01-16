@@ -9,7 +9,7 @@ class TipCalculation {
     this.splitCount = 1,
   });
 
-  // Jami choychaqa
+  // Jami usluga
   double get totalTip => billAmount * (tipPercentage / 100);
 
   // Jami summa
